@@ -57,19 +57,22 @@ function draw() {
   {
     plinkoG[p].display();
   }
- 
-}
-function mouseReleased()
-  {
-    particle=new Particle(mouse.x,00,10);
-    particleG.push(particle);
-
-    
-  for (var i=0;i<particleG.length;i=i+1)
+  if(frameCount%70===0)
+ {
+  particle=new Particle(random(10,470),0,10);
+  particleG.push(particle);
+ }
+ for (var i=0;i<particleG.length;i=i+1)
   {
     push()
     fill(random(0,225),random(0,255),random(0,255));
     particleG[i].display();
     pop()
   }
-  }
+}
+
+    
+
+    
+  
+  
