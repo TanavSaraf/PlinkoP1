@@ -30,8 +30,8 @@ function setup() {
         for(var p=40;p<480;p+=50)
       {
         
-        plinkoG.push(new Plinko(p,y,10))
-        plinkoG.push(new Plinko(p-30,y+35,10))
+        plinkoG.push(new Plinko(p,y,7))
+        plinkoG.push(new Plinko(p-30,y+35,7))
         
       }
     }
