@@ -59,7 +59,7 @@ function draw() {
   }
   if(frameCount%70===0)
  {
-  particle=new Particle(random(10,470),0,10);
+  particle=new Particle(random(10,470),0,7);
   particleG.push(particle);
  }
  for (var i=0;i<particleG.length;i=i+1)

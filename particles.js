@@ -13,8 +13,8 @@ class Particle {
     }
     display(){
       var pos =this.body.position;
-     ellipseMode(CENTER);
+      ellipseMode(RADIUS);
     
-      ellipse(pos.x, pos.y, this.radius+4, this.radius+4);
+      ellipse(pos.x, pos.y, this.radius, this.radius);
     }
   };
